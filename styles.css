@@ -1,0 +1,63 @@
+.calculator {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center align the content */
+}
+
+input[type="text"] {
+  width: 95%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center align horizontally */
+  padding: 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  text-align: right;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: block; /* Ensure block-level element behavior */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  justify-content: center; /* Center align the grid */
+}
+
+button {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #3e8e41;
+}
+
+button.trigonometric {
+  background-color: #2196F3;
+}
+
+button.logarithmic {
+  background-color: #FF9800;
+}
+
+button.memory {
+  background-color: #607D8B;
+}
